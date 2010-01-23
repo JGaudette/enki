@@ -8,13 +8,19 @@
   <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
   <title><%= yield(:page_title) || h(config[:title]) %></title>
   <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag 'code' %>
   <%= javascript_include_tag 'jquery' %>
+  <%= javascript_include_tag 'highlight.pack' %>
+  <script type="text/javascript">
+     hljs.initHighlightingOnLoad();
+  </script>
+
   <%= open_id_delegation_link_tags(h(config[:open_id_delegation, :server]), h(config[:open_id_delegation, :delegate])) if config[:open_id_delegation] %>
   <%= yield(:head) %>
 </head>
 <body>
-  <div id="page_container">
     <h1 id="page_heading"><a href="<%=h config[:url] %>"><%=h config[:title] %></a></h1>
+  <div id="page_container">
 
     <div id="main">
       <%= yield %>

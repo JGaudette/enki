@@ -2,7 +2,7 @@
 body
 {
   color: black;
-
+  background-color: #4f57c5;
   font: normal 12px verdana, arial, helvetica, sans-serif;
   line-height: 1.5;
   padding: 0px;
@@ -11,12 +11,11 @@ body
 
 #page_container
 {
-  width: 70em;
+  width: 99%;
   position: absolute;
   min-height: 400px;
-
+  background-color: #f7f3e8;
   color: black;
-
   margin-top: 5px;
   padding-left: 10px;
   border-right: solid 1px #aaaaaa;
@@ -41,6 +40,7 @@ body
 h1#page_heading
 {
   font-size: 24pt;
+  color: white;
 }
 
 h2
@@ -110,8 +110,8 @@ img
 {
   position: absolute;
   width: 10em;
-  top: -1px;
-  right: -1px;
+  top: 5px;
+  right: 7px;
 
   border: none;
   border-left: solid 1px #aaaaaa;

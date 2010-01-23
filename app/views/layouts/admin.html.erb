@@ -16,10 +16,18 @@
   <%= javascript_include_tag 'humanmsg' %>
   <%= javascript_include_tag 'admin/shortcut' %>
   <%= javascript_include_tag 'admin/common' %>
+  
+  <%= javascript_include_tag 'jquery' %>
+  <%= javascript_include_tag 'highlight.pack' %>
+  <script type="text/javascript">
+     hljs.initHighlightingOnLoad();
+  </script>
+
 
   <%= stylesheet_link_tag 'formtastic' %>
   <%= stylesheet_link_tag 'humanmsg' %>
   <%= stylesheet_link_tag 'admin' %>
+  <%= stylesheet_link_tag 'code' %>
   <%= yield(:head) %>
 
   <% if flash[:notice] -%>
