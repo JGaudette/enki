@@ -11,11 +11,15 @@ pre code[class]:after {
   color: #CCC; background: white;
   border-top: solid 1px;
   padding-top: 0.5em;
+  word-wrap: normal;
 }
 
 pre code {
   display: block;
+  width: 100%;
   background: #F0F0F0;
+  word-wrap: normal;
+  overflow: scroll;
 }
 
 pre code,
