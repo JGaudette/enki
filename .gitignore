@@ -1,11 +1,6 @@
-log/**/*
-log
-tmp/**/*
-tmp
-<<<<<<< HEAD
-db/schema.rb
-=======
+log/
+tmp/
 config/database.yml
-db/schema.rb
 .bundle
->>>>>>> aa3ff030e5adc9dd566f2c7e47155cd9ceb13230
+*.un~
+*.swp~
